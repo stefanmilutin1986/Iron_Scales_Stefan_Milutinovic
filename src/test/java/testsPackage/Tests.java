@@ -45,7 +45,7 @@ public class Tests extends BaseClass {
         homePage.clickOnCareersLinkInCompanyDropDown();
         careersPage.clickOnJoBOpeningButton();
         scrollToBottomOfPage();
-        Thread.sleep(7000);
+        Thread.sleep(5000);
         careerOpportunitiesPage.clickOnQAautomationEngineerJobLink();
         scrollToBottomOfPage();
         Thread.sleep(5000);
@@ -57,6 +57,8 @@ public class Tests extends BaseClass {
 
     @Test
     public void taskNumberThreeFooterLinksPresent() throws InterruptedException {
+        scrollToBottomOfPage();
+        Thread.sleep(2000);
         Assert.assertTrue("Linkedin icon in footer not present", homePage.linkedinIconFooterPresent());
         Assert.assertTrue("Youtube icon in footer not present", homePage.youtubeIconFooterPresent());
         Assert.assertTrue("Twitter icon in footer not present", homePage.twitterIconFooterPresent());
@@ -70,11 +72,13 @@ public class Tests extends BaseClass {
 //        Thread.sleep(10000);
 //        homePage.clickOnInstagramLinkInFooter();
 //        Element is not clickable at point (1890, 1382)
+//        switchToNewTab();
 
 //        scrollToBottomOfPage();
 //        Thread.sleep(5000);
 //        actions.moveToElement(driver.findElement(homePage.instagramLinkInFooter)).click().perform();
 //        MoveTargetOutOfBoundsException: move target out of bounds
+//        switchToNewTab();
 
 //        Did not see any pop up window on page that preventing footer links not accessible
 //        Tried in FireFox also but no success
