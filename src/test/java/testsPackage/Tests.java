@@ -68,6 +68,8 @@ public class Tests extends BaseClass {
 
     @Test
     public void taskNumberThreeFooterLinksClicking() throws InterruptedException {
+
+//        Tried with this two strategies but no success:
 //        scrollToBottomOfPage();
 //        Thread.sleep(10000);
 //        homePage.clickOnInstagramLinkInFooter();
